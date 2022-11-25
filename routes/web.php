@@ -133,6 +133,8 @@ Route::get('usuarios/consultaemail/{email}','UsuarioController@consultaEmail')->
 
 Route::resource('usuarios', 'UsuarioController');
 
+Route::resource('setup', 'SetupController');
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

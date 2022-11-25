@@ -35,7 +35,7 @@
     <div class="nav-tabs-custom">
       <ul class="nav nav-tabs">
         <li class="navhead" style="width: 50%;" >
-          <a href="#tab_1" data-toggle="tab" class="navurl"><img src="/images/1.png" alt="" width="50" height="50" style="border-radius: 15px;"><b> {{$alumno->apaterno}} {{$alumno->amaterno}} {{$alumno->nombres}}</b> Grupo actual: <label id="label_grupo">@if($grupoinscrito)<b> {{$grupoinscrito->grado_semestre}} {{$grupoinscrito->diferenciador_grupo}}</b>&nbsp;&nbsp;status: <b>{{$grupoinscrito->status}}@endif</label></b></a>
+          <a href="#tab_1" data-toggle="tab" class="navurl"><img src="/images/{{$alumno->foto}}" alt="" width="50" height="50" style="border-radius: 15px;"><b> {{$alumno->apaterno}} {{$alumno->amaterno}} {{$alumno->nombres}}</b> Grupo actual: <label id="label_grupo">@if($grupoinscrito)<b> {{$grupoinscrito->grado_semestre}} {{$grupoinscrito->diferenciador_grupo}}</b>&nbsp;&nbsp;status: <b>{{$grupoinscrito->status}}@endif</label></b></a>
         </li>
           <li class="active"><a href="#tab_1" data-toggle="tab">Datos personales</a></li>
           <li><a href="/alumnos/grupo/{{$alumno->id}}" >Grupo</a></li>
