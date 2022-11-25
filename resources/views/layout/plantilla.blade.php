@@ -238,6 +238,7 @@ https://cdn.rawgit.com/bpampuch/pdfmake/0.1.27/build/vfs_fonts.js
 <script type="text/javascript">
 $(document).ready(function()
 {
+   $('.select2').select2();
   if($("#id_ciclo").val()==0){
     $.ajax({
        url:"/cicloescolar/cicloreciente/",
